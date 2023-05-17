@@ -20,4 +20,12 @@ except ZeroDivisionError:
     print("Entrada erronea...")
 except:
     print("¨¨¨¨¨¨NOOO¨¨¨¨¨¨") #L arespuesta sera entrada erronea 
+    # verdadera o falso 
+    while True:
+    try:
+        number = int(input("Ingresa un número entero: "))
+        print(number/2)#saldra el letrero de advertencia al ingreseer un numero decimal
+        break
+    except:
+        print("Advertencia: el valor ingresado no es un número válido. Intenta de nuevo...")
 
