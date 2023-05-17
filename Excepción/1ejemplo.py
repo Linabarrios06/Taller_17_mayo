@@ -1,31 +1,32 @@
-#Error al no cerrar las comas 
-print("Hola, ¡Mundo!) 
-#No cerrar los parentesis 
-n=4
-print(8*n*(7)
-#no dar un valor a variable 
-print(sacha , "Ella es la mascota de susi")
-#dividir al 0
-print(12/0)
-#No escribir un numero entero 
-value = input("Ingresa un número entero: ")
-print(10/value)
-#
+#Excepción ZeroDivisionError
 try:
-    value = int(input("Ingresa un número entero: "))
-    print(value/value)
-except ValueError:
-    print("Entrada incorrecta...")
+    resultado = 18/0 
 except ZeroDivisionError:
-    print("Entrada erronea...")
-except:
-    print("¨¨¨¨¨¨NOOO¨¨¨¨¨¨") #L arespuesta sera entrada erronea 
-    # verdadera o falso 
-    while True:
-    try:
-        number = int(input("Ingresa un número entero: "))
-        print(number/2)#saldra el letrero de advertencia al ingreseer un numero decimal
-        break
-    except:
-        print("Advertencia: el valor ingresado no es un número válido. Intenta de nuevo...")
+    print("Error: División por cero")
+#Excepción IndexError
+try:
+    lista= ["rojo","Blanco","negro"]
+    elemento= lista[azul]
+except IndexError:
+    print("Error: Indice fuera de rango")
+#Excepción TypeError
+try:
+    resultado = '6'/ 2
+except TypeError:
+    print("Error: Tipo de dato incorrecto")
+#Excepción KeyError
+try: 
+    diccionario= {'1': 'luna','2':'Sol'}
+    valor= diccionario['3']
+except KeyError:
+#Excepción GeneratorExit
+try:
+    resultado= 50/0
+except  Exception as e:
+    print("Ocurrio un error:", str(e))
+except GeneratorExit:
+
+
+
+
 
