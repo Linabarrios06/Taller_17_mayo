@@ -19,6 +19,7 @@ try:
     diccionario= {'1': 'luna','2':'Sol'}
     valor= diccionario['3']
 except KeyError:
+  print("Error: valor no encontrado. ")
 #Excepción GeneratorExit
 try:
     resultado= 50/0
